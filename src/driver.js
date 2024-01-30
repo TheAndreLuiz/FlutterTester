@@ -14,6 +14,7 @@ class Driver {
             capabilities: {
                 ...osSpecificOps,
                 'appium:automationName': 'Flutter',
+                'appium:autoGrantPermissions': 'true',
             }
         };
     }

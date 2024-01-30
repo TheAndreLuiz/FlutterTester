@@ -1,3 +1,4 @@
+const { dragAndDrop } = require('webdriverio/build/commands/element.js');
 const getDriver = require('./driver.js');
 
 class ButtonHandler {
@@ -20,6 +21,8 @@ class ButtonHandler {
     }
 
     async secret() {
+        driver = await getDriver()
+        await driver.switchContext('NATIVE_APP')
         await (new ButtonHandler()).sendVolumeUp()
         await (new ButtonHandler()).sendVolumeDown()
         await (new ButtonHandler()).sendVolumeUp()
