@@ -21,10 +21,16 @@ class Finder {
     async findElement(search) {
         const elements = await this.findAll();
         for (const element of elements) {
-            if ((await getDriver()).getElementAttribute(element['element-6066-11e4-a52e-4f735466cecf'], 'name').contains(search)) {
+            const text = await (await getDriver()).getElementAttribute(element['element-6066-11e4-a52e-4f735466cecf'], 'text')
+            const name = await (await getDriver()).getElementAttribute(element['element-6066-11e4-a52e-4f735466cecf'], 'name')
+            const _class = await (await getDriver()).getElementAttribute(element['element-6066-11e4-a52e-4f735466cecf'], 'class')
+            const className = await (await getDriver()).getElementAttribute(element['element-6066-11e4-a52e-4f735466cecf'], 'className')
+            const contentDescription = await (await getDriver()).getElementAttribute(element['element-6066-11e4-a52e-4f735466cecf'], 'contentDescription')
+            if (text.toString().includes(search) || name.toString().includes(search) || _class.toString().includes(search) || className.toString().includes(search) || contentDescription.toString().includes(search)){
                 return element['element-6066-11e4-a52e-4f735466cecf']; // avoid magic stuff later
             }
         }
+        return null
     }
 }
 

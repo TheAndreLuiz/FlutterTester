@@ -4,7 +4,7 @@ class Driver {
     constructor() {
         const osSpecificOps = {
             'platformName': 'Android',
-            'appium:deviceName': 'R9QR300JCFY',
+            'appium:deviceName': 'RQCR300B0VM',
             'appium:app': './app-debug.apk',
         };
 
