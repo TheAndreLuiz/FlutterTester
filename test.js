@@ -1,5 +1,6 @@
 const TapHandler = require('./src/tapHandler.js');
 const ButtonHandler = require('./src/buttonHandler.js');
+const ButtonHandler = require('./src/buttonHandler.js');
 
 (async () => {
   await (new ButtonHandler()).secret()

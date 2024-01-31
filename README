@@ -1,2 +1,6 @@
-todas vez q abre, remover
-post on reddit/github
+WIP
+
+
+use  {"sessionId":"7a9c8d0e-8341-4af3-9b2c-aa4f61011a8a","value":{"androidId":"f06c5947ef612ade","apiVersion":"31","bluetooth":{"state":"ON"},"brand":"samsung","carrierName":"","displayDensity":280,"locale":"pt_BR","manufacturer":"samsung","model":"SM-A115M","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":32505,"linkUpstreamBandwidthKbps":24750,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-42,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":-1,"subtypeName":"","type":1,"typeName":"WIFI"}],"platformVersion":"12","realDisplaySize":"720x1560","timeZone":"America/Sao_Paulo"}}
+
+detectar se tem elemento, timeout nao infinito
