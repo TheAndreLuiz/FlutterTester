@@ -4,7 +4,7 @@ class Driver {
     constructor() {
         const osSpecificOps = {
             'platformName': 'Android',
-            'appium:deviceName': 'RQCR300B0VM',
+            'appium:deviceName': 'R9QR300JCFY',
             'appium:app': './app-debug.apk',
         };
 
@@ -14,7 +14,6 @@ class Driver {
             capabilities: {
                 ...osSpecificOps,
                 'appium:automationName': 'Flutter',
-                'appium:autoGrantPermissions': 'true',
             }
         };
     }

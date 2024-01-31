@@ -6,8 +6,7 @@ class TapHandler {
     }
 
     async tap(search) {
-        const element = await (new Finder()).findElement(search)
-        await (await getDriver()).elementClick(element.toString())
+        await (await getDriver()).elementClick((new Finder()).findElement(search))
     }
 }
 
