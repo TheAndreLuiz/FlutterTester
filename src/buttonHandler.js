@@ -33,7 +33,7 @@ class ButtonHandler {
         const driver = await getDriver()
         await driver.switchContext('NATIVE_APP')
         for (let i = 0; i < password.length; i++) {
-            await driver.elementClick(await (new Finder()).findByCss(`android=new UiSelector().text("${password[i]}")`))
+            await driver.elementClick(await (new Finder()).findByCss('*=' + i.toString()))
         }
     }
 }
